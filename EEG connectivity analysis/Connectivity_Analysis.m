@@ -68,7 +68,7 @@ get_all_to_all_ISPC_connectivity(channel_trials_without_volume_conduction, sampl
 %}
 
 mkdir(root_imaginary_coherence);
-imaginary_coherence_matrix = get_all_to_all_imaginary_coherence_connectivity_X_version(trials, sampling_rate, root_imaginary_coherence);
+imaginary_coherence_matrix = get_all_to_all_imaginary_coherence_connectivity(trials, sampling_rate, root_imaginary_coherence);
 
 
 

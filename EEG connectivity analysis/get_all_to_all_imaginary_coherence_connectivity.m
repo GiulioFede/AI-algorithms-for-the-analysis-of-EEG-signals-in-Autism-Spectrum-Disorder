@@ -1,6 +1,6 @@
 
 
-function imaginary_coherence_matrix = get_all_to_all_imaginary_coherence_connectivity_X_version(channels_trials,sampling_rate,root_path)
+function imaginary_coherence_matrix = get_all_to_all_imaginary_coherence_connectivity(channels_trials,sampling_rate,root_path)
 
 
     [number_of_channels, length_of_single_trial, number_of_trials] = size(channels_trials);
