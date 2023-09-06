@@ -1,0 +1,15 @@
+Ecco cosa eseguire:
+1. clustering_power_dataset_for_feature_extraction
+2. prepare_power_region_data
+
+
+Su colab:
+1. Aprire Power.ipynb
+	1.1 Eseguire "Librerie e caricamento delle feature di potenza". Qui andrai a scegliere il tipo di dataset (es. sociale sincrono)
+	1.2 Eseguire K-Means con feature originali senza dimensionality reduction
+		1.2.1 Una volta caricato il dataset andare in "K=3 proviamo a separare gli HR_sign con gli HR_no_sign e gli LR"
+			1.2.1.1 Eseguire NSGA. Nota che l'algoritmo usa solo l'Adjusted Rand Score con 100 di popolazione e 1000 iterazioni. 
+				Una volta terminato avrà tutte le Paretiane non dominanti tra loro. 
+				Seguiamo col salvare le feature nel file nsga2.xlsx. NB: nel for modificare il "tipo" con lo stimolo corrente
+			1.2.1.2 Se almeno una soluzione paretiana ha due sole feature, eseguire 2D PLOT. Scegliamo una soluzione paretiana tra le N ottenute.
+				Altrimenti, eseguire 2D-PCA-PLOT
